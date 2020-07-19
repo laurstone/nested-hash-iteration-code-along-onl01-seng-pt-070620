@@ -15,6 +15,7 @@ require 'pry'
   # }
   
 def remove_strawberry(contacts)
+<<<<<<< HEAD
   contacts.each do |person, contact_details_hash|
     if person == "Freddy Mercury"
       contact_details_hash.each do |attribute, data|
@@ -25,3 +26,21 @@ def remove_strawberry(contacts)
     end
   end
 end
+=======
+   contacts.each do |person, contact_details_hash|
+  binding.pry
+  contacts = {
+  "Jon Snow" => {
+    name: "Jon",
+    email: "jon_snow@thewall.we",
+    favorite_ice_cream_flavors: ["chocolate", "vanilla"]
+  },
+  "Freddy Mercury" => {
+    name: "Freddy",
+    email: "freddy@mercury.com",
+    favorite_ice_cream_flavors: ["strawberry", "cookie dough", "mint chip"]
+  }
+}
+ 
+end
+>>>>>>> 15605dbae920c4e2d77ebc61ac22205e6851c91b
